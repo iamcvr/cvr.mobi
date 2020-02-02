@@ -1,0 +1,29 @@
+.cust-text {
+  font-family: "Fjalla One";
+}
+
+.k_works {
+  width: 50%;
+}
+
+.videoInsert {
+  max-width: 42em;
+}
+
+.videoWall>video {
+  width: 260px;
+  cursor: pointer;
+}
+
+.mainpage_info {
+  padding-top: 3%;
+}
+
+.alert-success {
+
+  margin: 5% 30%;
+}
+
+.imgWorks {
+  width: 150px;
+}

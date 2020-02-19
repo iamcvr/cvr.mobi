@@ -48,3 +48,8 @@ h2 {
 .stats-form {
   margin: 0 45%;
 }
+
+td, th {
+  color: #fff;
+  background-color: #333231;
+}

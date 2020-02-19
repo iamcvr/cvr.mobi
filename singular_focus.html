@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Neucha&display=swap" rel="stylesheet">
+  <title>Singular Focus</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand cust-text" href="index.html">CVR</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Works
+          </a>
+          <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="works.html#200">200</a>
+            <a class="dropdown-item" href="works.html#100">100</a>
+            <div class="dropdown-divider"></div>
+            <p>here be dragons.</p>
+            <a class="dropdown-item" href="works.html#000">000</a>
+          </div>
+        </li>
+      <div style="border-left:1px solid #fff;height:30px; margin:1% 0"></div>
+        <li class="nav-item">
+        <a class="nav-link" href="singular_focus.html">Singular Focus Training Program</a>
+      </li>
+<div style="border-left:1px solid #fff;height:30px; margin:1% 0"></div>
+        <li class="nav-item">
+        <a class="nav-link" href="tracklist.html">Tracklist</a>
+      </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <section id="content">
+      <!-- Navigation -->
+
+
+      <!-- Title content -->
+
+      <div class="row">
+        <div class="col-lg text-center">
+          <h1>Singular Focus Program Calculator.</h1>
+        </div>
+      </div>
+<div class="stats-form text-center">
+  <form class="needs-validation" method="post" action="javascript:calcProgram()">
+    <div class="form-group">
+      <label for="squat">Squat</label>
+      <input type="number" class="form-control" id="squat" required>
+      <div class="invalid-feedback">Value is required.</div>
+    </div>
+    <div class="form-group">
+      <label for="bench">Bench</label>
+      <input type="number" class="form-control" id="bench" required>
+      <div class="invalid-feedback">Value is required.</div>
+    </div>
+    <div class="form-group">
+      <label for="deadlift">Deadlift</label>
+      <input type="number" class="form-control" id="deadlift" required>
+      <div class="invalid-feedback">Value is required.</div>
+    </div>
+    <div class="form-group">
+      <label for="ohp">OHP</label>
+      <input type="number" class="form-control" id="ohp" required>
+      <div class="invalid-feedback">Value is required.</div>
+    </div>
+    <button name="Submit" type="submit" class="btn btn-dark btn-lg">Calculate</button>
+  </form>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+</div>
+
+    </section>
+  </div>
+
+  <section id="results">
+    <div class="row results">
+      <div class="col-lg text-center">
+        <h2>Schedule.</h2>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Week #</th>
+              <th scope="col">Day 1</th>
+              <th scope="col">Day 2</th>
+              <th scope="col">Day 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td class="w1d1">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Squat</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="d1s1">Squat 1</td>
+                  </tr>
+                  <tr>
+                    <td class="d1s2">Squat 2</td>
+                  </tr>
+                  <tr>
+                    <td class="d1s3">Squat 3</td>
+                  </tr>
+                  <tr>
+                    <td class="d1s4">Squat 4</td>
+                  </tr>
+                  <tr>
+                    <td class="d1s5">Squat 5</td>
+                  </tr>
+                  <tr>
+                    <td class="d1s6">Squat 6</td>
+                  </tr>
+                  <tr>
+                    <td class="d1s7">Squat 7</td>
+                  </tr>
+                  <tr>
+                    <td class="d1s8">Squat 8</td>
+                  </tr>
+                  <tr>
+                    <td class="d1s9">Squat 9</td>
+                  </tr>
+                </table>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Bench</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="benchAcc1">Bench 1</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc2">Bench 2</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc3">Bench 3</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc4">Bench 4</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc5">Bench 5</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc6">Bench 6</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="w1d2">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Deadlift</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="deadliftAcc1">Deadlift 1</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc2">Deadlift 2</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc3">Deadlift 3</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc4">Deadlift 4</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc5">Deadlift 5</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc6">Deadlift 6</td>
+                  </tr>
+                </table>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">OHP</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="ohpAcc1">OHP 1</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc2">OHP 2</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc3">OHP 3</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc4">OHP 4</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc5">OHP 5</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc6">OHP 6</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="w1d3">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Bench</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="d1b1">Bench 1</td>
+                  </tr>
+                  <tr>
+                    <td class="d1b2">Bench 2</td>
+                  </tr>
+                  <tr>
+                    <td class="d1b3">Bench 3</td>
+                  </tr>
+                  <tr>
+                    <td class="d1b4">Bench 4</td>
+                  </tr>
+                  <tr>
+                    <td class="d1b5">Bench 5</td>
+                  </tr>
+                  <tr>
+                    <td class="d1b6">Bench 6</td>
+                  </tr>
+                  <tr>
+                    <td class="d1b7">Bench 7</td>
+                  </tr>
+                  <tr>
+                    <td class="d1b8">Bench 8</td>
+                  </tr>
+                  <tr>
+                    <td class="d1b9">Bench 9</td>
+                  </tr>
+                </table>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Squat</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="squatAcc1">Squat 1</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc2">Squat 2</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc3">Squat 3</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc4">Squat 4</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc5">Squat 5</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc6">Squat 6</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td class="w2d1">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">OHP</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="d1o1">OHP 1</td>
+                  </tr>
+                  <tr>
+                    <td class="d1o2">OHP 2</td>
+                  </tr>
+                  <tr>
+                    <td class="d1o3">OHP 3</td>
+                  </tr>
+                  <tr>
+                    <td class="d1o4">OHP 4</td>
+                  </tr>
+                  <tr>
+                    <td class="d1o5">OHP 5</td>
+                  </tr>
+                  <tr>
+                    <td class="d1o6">OHP 6</td>
+                  </tr>
+                  <tr>
+                    <td class="d1o7">OHP 7</td>
+                  </tr>
+                  <tr>
+                    <td class="d1o8">OHP 8</td>
+                  </tr>
+                  <tr>
+                    <td class="d1o9">OHP 9</td>
+                  </tr>
+                </table>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Deadlift</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="deadliftAcc1">Deadlift 1</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc2">Deadlift 2</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc3">Deadlift 3</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc4">Deadlift 4</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc5">Deadlift 5</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc6">Deadlift 6</td>
+                  </tr>
+
+                </table>
+              </td>
+              <td class="w2d2">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Squat</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="squatAcc1">Squat 1</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc2">Squat 2</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc3">Squat 3</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc4">Squat 4</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc5">Squat 5</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc6">Squat 6</td>
+                  </tr>
+                </table>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Bench</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="benchAcc1">Bench 1</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc2">Bench 2</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc3">Bench 3</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc4">Bench 4</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc5">Bench 5</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc6">Bench 6</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="w2d3">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Deadlift</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="d1d1">Deadlift 1</td>
+                  </tr>
+                  <tr>
+                    <td class="d1d2">Deadlift 2</td>
+                  </tr>
+                  <tr>
+                    <td class="d1d3">Deadlift 3</td>
+                  </tr>
+                  <tr>
+                    <td class="d1d4">Deadlift 4</td>
+                  </tr>
+                  <tr>
+                    <td class="d1d5">Deadlift 5</td>
+                  </tr>
+                  <tr>
+                    <td class="d1d6">Deadlift 6</td>
+                  </tr>
+                  <tr>
+                    <td class="d1d7">Deadlift 7</td>
+                  </tr>
+                  <tr>
+                    <td class="d1d8">Deadlift 8</td>
+                  </tr>
+                  <tr>
+                    <td class="d1d9">Deadlift 9</td>
+                  </tr>
+                </table>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">OHP</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="ohpAcc1">OHP 1</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc2">OHP 2</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc3">OHP 3</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc4">OHP 4</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc5">OHP 5</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc6">OHP 6</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td class="w3d1">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Bench</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="d2b1">Bench 1</td>
+                  </tr>
+                  <tr>
+                    <td class="d2b2">Bench 2</td>
+                  </tr>
+                  <tr>
+                    <td class="d2b3">Bench 3</td>
+                  </tr>
+                  <tr>
+                    <td class="d2b4">Bench 4</td>
+                  </tr>
+                  <tr>
+                    <td class="d2b5">Bench 5</td>
+                  </tr>
+                  <tr>
+                    <td class="d2b6">Bench 6</td>
+                  </tr>
+                  <tr>
+                    <td class="d2b7">Bench 7</td>
+                  </tr>
+                  <tr>
+                    <td class="d2b8">Bench 8</td>
+                  </tr>
+                  <tr>
+                    <td class="d2b9">Bench 9</td>
+                  </tr>
+                </table>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Squat</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="squatAcc1">Squat 1</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc2">Squat 2</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc3">Squat 3</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc4">Squat 4</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc5">Squat 5</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc6">Squat 6</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="w3d2">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">OHP</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="ohpAcc1">OHP 1</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc2">OHP 2</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc3">OHP 3</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc4">OHP 4</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc5">OHP 5</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc6">OHP 6</td>
+                  </tr>
+                </table>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Deadlift</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="deadliftAcc1">Deadlift 1</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc2">Deadlift 2</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc3">Deadlift 3</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc4">Deadlift 4</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc5">Deadlift 5</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc6">Deadlift 6</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="w3d3">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Squat</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="d2s1">Squat 1</td>
+                  </tr>
+                  <tr>
+                    <td class="d2s2">Squat 2</td>
+                  </tr>
+                  <tr>
+                    <td class="d2s3">Squat 3</td>
+                  </tr>
+                  <tr>
+                    <td class="d2s4">Squat 4</td>
+                  </tr>
+                  <tr>
+                    <td class="d2s5">Squat 5</td>
+                  </tr>
+                  <tr>
+                    <td class="d2s6">Squat 6</td>
+                  </tr>
+                  <tr>
+                    <td class="d2s7">Squat 7</td>
+                  </tr>
+                  <tr>
+                    <td class="d2s8">Squat 8</td>
+                  </tr>
+                  <tr>
+                    <td class="d2s9">Squat 9</td>
+                  </tr>
+                </table>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Bench</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="benchAcc1">Bench 1</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc2">Bench 2</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc3">Bench 3</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc4">Bench 4</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc5">Bench 5</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc6">Bench 6</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td class="w4d1">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Deadlift</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="d2d1">Deadlift 1</td>
+                  </tr>
+                  <tr>
+                    <td class="d2d2">Deadlift 2</td>
+                  </tr>
+                  <tr>
+                    <td class="d2d3">Deadlift 3</td>
+                  </tr>
+                  <tr>
+                    <td class="d2d4">Deadlift 4</td>
+                  </tr>
+                  <tr>
+                    <td class="d2d5">Deadlift 5</td>
+                  </tr>
+                  <tr>
+                    <td class="d2d6">Deadlift 6</td>
+                  </tr>
+                  <tr>
+                    <td class="d2d7">Deadlift 7</td>
+                  </tr>
+                  <tr>
+                    <td class="d2d8">Deadlift 8</td>
+                  </tr>
+                  <tr>
+                    <td class="d2d9">Deadlift 9</td>
+                  </tr>
+                </table>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">OHP</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="ohpAcc1">OHP 1</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc2">OHP 2</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc3">OHP 3</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc4">OHP 4</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc5">OHP 5</td>
+                  </tr>
+                  <tr>
+                    <td class="ohpAcc6">OHP 6</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="w4d2">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Bench</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="benchAcc1">Bench 1</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc2">Bench 2</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc3">Bench 3</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc4">Bench 4</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc5">Bench 5</td>
+                  </tr>
+                  <tr>
+                    <td class="benchAcc6">Bench 6</td>
+                  </tr>
+                </table>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Squat</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="squatAcc1">Squat 1</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc2">Squat 2</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc3">Squat 3</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc4">Squat 4</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc5">Squat 5</td>
+                  </tr>
+                  <tr>
+                    <td class="squatAcc6">Squat 6</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="w4d3">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">OHP</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="d2o1">OHP 1</td>
+                  </tr>
+                  <tr>
+                    <td class="d2o2">OHP 2</td>
+                  </tr>
+                  <tr>
+                    <td class="d2o3">OHP 3</td>
+                  </tr>
+                  <tr>
+                    <td class="d2o4">OHP 4</td>
+                  </tr>
+                  <tr>
+                    <td class="d2o5">OHP 5</td>
+                  </tr>
+                  <tr>
+                    <td class="d2o6">OHP 6</td>
+                  </tr>
+                  <tr>
+                    <td class="d2o7">OHP 7</td>
+                  </tr>
+                  <tr>
+                    <td class="d2o8">OHP 8</td>
+                  </tr>
+                  <tr>
+                    <td class="d2o9">OHP 9</td>
+                  </tr>
+                </table>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Deadlift</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="deadliftAcc1">Deadlift 1</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc2">Deadlift 2</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc3">Deadlift 3</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc4">Deadlift 4</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc5">Deadlift 5</td>
+                  </tr>
+                  <tr>
+                    <td class="deadliftAcc6">Deadlift 6</td>
+                  </tr>
+
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </section>
+
+
+
+
+
+  <script type="text/javascript" src="js/trainingProgram.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

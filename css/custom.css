@@ -28,3 +28,29 @@
 .imgWorks {
   width: 150px;
 }
+
+.stats {
+  margin: 1% 45% 1%;
+}
+
+.results {
+  margin: 5% 15% ;
+
+}
+
+#results {
+  visibility: hidden;
+}
+
+h2 {
+  margin-bottom: 3%;
+}
+
+.stats-form {
+  margin: 0 45%;
+}
+
+td, th {
+  color: #fff;
+  background-color: #333231;
+}

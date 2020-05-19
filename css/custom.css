@@ -8,6 +8,7 @@
 
 .videoInsert {
   max-width: 42em;
+  width: 100%;
 }
 
 .videoWall>video {
